@@ -1,0 +1,37 @@
+{
+  "name": "basestream",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.9",
+    "@tailwindcss/postcss": "^4.1.16",
+    "@tanstack/react-query": "^5.90.5",
+    "@types/node": "^24.9.1",
+    "@types/react": "^19.2.2",
+    "autoprefixer": "^10.4.21",
+    "next": "^16.0.0",
+    "postcss": "^8.5.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.16",
+    "typescript": "^5.9.3",
+    "viem": "^2.38.4",
+    "wagmi": "^2.18.2"
+  },
+  "devDependencies": {
+    "ethers": "^6.15.0",
+    "hardhat": "^3.0.9",
+    "tsx": "^4.20.6"
+  },
+  "type": "module"
+}
