@@ -10,7 +10,13 @@ async function main() {
   console.log("Deploying SalaryStream contract...");
 
   const provider = new ethers.JsonRpcProvider("https://mainnet.base.org");
-  const wallet = new ethers.Wallet("0xd82e86acc118255d0691898138eb48e77cc6da0eebd18337f748e3f5b2741ca7", provider);
+
+  const privateKey = process.env.PRIVATE_KEY;
+  if (!privateKey) {
+    throw new Error("PRIVATE_KEY environment variable is required");
+  }
+
+  const wallet = new ethers.Wallet(privateKey, provider);
 
   console.log("Deploying from address:", wallet.address);
 
