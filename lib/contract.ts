@@ -1,4 +1,4 @@
-export const CONTRACT_ADDRESS = '0x8536B473F4d2B2eeD9a8FE3A2201637dA5Cf0787' as const
+export const CONTRACT_ADDRESS = '0x212f220b21218Bb8201ADdec4d66Ea4D76394786' as const
 
 export const CONTRACT_ABI = [
   'function owner() view returns (address)',
